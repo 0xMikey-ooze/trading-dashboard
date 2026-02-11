@@ -20,7 +20,7 @@ export default function OpportunityScanner({
   opportunities = [],
   totalScans = 0,
 }: OpportunityScannerProps) {
-  const highConf = opportunities.filter((o) => (o.confidence ?? 0) > 0.7);
+  const _highConf = opportunities.filter((o) => (o.confidence ?? 0) > 0.7);
 
   return (
     <div className="card">
