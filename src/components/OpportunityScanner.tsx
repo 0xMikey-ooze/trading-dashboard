@@ -20,7 +20,8 @@ export default function OpportunityScanner({
   opportunities = [],
   totalScans = 0,
 }: OpportunityScannerProps) {
-  const _highConf = opportunities.filter((o) => (o.confidence ?? 0) > 0.7);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const highConf = opportunities.filter((o) => (o.confidence ?? 0) > 0.7);
 
   return (
     <div className="card">
